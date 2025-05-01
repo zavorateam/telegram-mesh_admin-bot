@@ -1,24 +1,32 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fhello-world&demo-title=Python%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fpython-hello-world.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
-
-# Python Hello World
-
-This example shows how to use Python on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
-
-## Demo
-
-https://python-hello-world.vercel.app/
-
+# Telegram Bot formatter @solving_CDZ_tests_bot
+## Бот создан что бы форматировать и сохранять локально для общего доступа к ответам
 ## Running Locally
 
+Создайте файл .env с примерно следующим содерданием:
+```
+BOT_TOKEN= YOUR_BOT_TOKEN
+ADMIN_CHAT_ID=-XXXXXXXXXX
+```
+Установите зависимости
 ```bash
-npm i -g vercel
-vercel dev
+pip install -r requirements.txt
+```
+И запустите бота
+```bash
+python.exe mesh_bot.py
 ```
 
-Your Python API is now available at `http://localhost:3000/api`.
+### ВНИМАНИЕ! СКРИПТ ДОЛЖЕН БЫТЬ ВСЕГДА ЗАПУЩЕН ДЛЯ РАБОТОСПОСОБНОСТИ БОТА. 
 
-## One-Click Deploy
+## Bot working
+Команды:
+* /admini (админ-чат) - создание нового теста
+* /xadmini (админ-чат) - завершение создания нового теста
+* /homeworks - все сохранённые тесты
+* /start - запуск и перезапуск бота
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+### ВНИМАНИЕ! БОТ СОХРАНЯЕТ ВСЕ ТЕСТЫ В ФАЙЛ test.json, ЕСЛИ ЕГО УДАЛИТЬ, ВСЕ ДОБАВЛЕННЫЕ ТЕСТЫ ТОЖЕ УДАЛЯТЬСЯ!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fhello-world&demo-title=Python%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fpython-hello-world.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+Первым сообщением всегда присылайте название теста! В случае с указанным в заголовке ботом, достаточно просто скопировать все сообщения, отправленные им сообщения по порядку.
+
+## Удачи!
